@@ -1181,12 +1181,12 @@ public class RCTMGLMapView extends MapView implements
             bottom = top;
             left = top;
         }
-
-        mMap.setPadding(
-                Float.valueOf(left * metrics.scaledDensity).intValue(),
-                Float.valueOf(top * metrics.scaledDensity).intValue(),
-                Float.valueOf(right * metrics.scaledDensity).intValue(),
-                Float.valueOf(bottom * metrics.scaledDensity).intValue());
+        mMap.setPadding(left, top, right, bottom);
+//         mMap.setPadding(
+//                 Float.valueOf(left * metrics.scaledDensity).intValue(),
+//                 Float.valueOf(top * metrics.scaledDensity).intValue(),
+//                 Float.valueOf(right * metrics.scaledDensity).intValue(),
+//                 Float.valueOf(bottom * metrics.scaledDensity).intValue());
     }
 
     private void setMinMaxZoomLevels() {
